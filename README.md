@@ -1,5 +1,6 @@
+# Hi there 👋
+
 <div id="typewriter">
-    <div class="line" data-text="👋 Hi, I’m @LongHCyber"></div>
     <div class="line" data-text="👀 I’m interested in ..."></div>
     <div class="line" data-text="🌱 I’m currently learning ..."></div>
     <div class="line" data-text="💞️ I’m looking to collaborate on ..."></div>
