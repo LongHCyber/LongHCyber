@@ -1,65 +1,28 @@
-# Hi there 👋
+# My Profile
 
-<div id="typewriter">
-    <div class="line">👀 I’m interested in ...</div>
-    <div class="line">🌱 I’m currently learning ...</div>
-    <div class="line">💞️ I’m looking to collaborate on ...</div>
-    <div class="line">📫 How to reach me ...</div>
-    <div class="line">😄 Pronouns: ...</div>
-    <div class="line">⚡ Fun fact: ...</div>
+<div style="font-size: 24px; font-weight: bold;">
+  <p id="line1">My Name</p>
+  <p id="line2">Job</p>
 </div>
 
 <style>
-#typewriter {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 24px;
-    line-height: 1.5;
-}
+  @keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
 
-.line {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    box-sizing: border-box;
-    width: 0;
-    animation: typing 3s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
-    display: block;
-    margin: 0;
-}
+  @keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
-.line:nth-child(1) {
-    animation-delay: 1s;
-}
+  #line1 {
+    animation: move 5s infinite;
+  }
 
-.line:nth-child(2) {
-    animation-delay: 5s;
-}
-
-.line:nth-child(3) {
-    animation-delay: 9s;
-}
-
-.line:nth-child(4) {
-    animation-delay: 13s;
-}
-
-.line:nth-child(5) {
-    animation-delay: 17s;
-}
-
-.line:nth-child(6) {
-    animation-delay: 21s;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
-}
+  #line2 {
+    animation: fade 5s infinite;
+  }
 </style>
